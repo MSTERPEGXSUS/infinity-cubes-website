@@ -1,0 +1,200 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Infinity Cubes</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#10B981">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<nav class="navbar">
+
+<div class="logo">
+
+♾️ Infinity Cubes
+
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">Shop</a></li>
+
+<li><a href="#">Custom Prints</a></li>
+
+<li><a href="#">AI Assistant</a></li>
+
+<li><a href="#">Account</a></li>
+
+
+<li>
+
+<button class="cart-button">
+
+🛒 Cart
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</li>
+
+</ul>
+
+</nav>
+
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+
+Premium 3D Printed Infinity Cubes
+
+</h1>
+
+<p>
+
+Designed. Printed. Delivered.
+
+Built with precision using high-quality materials.
+
+</p>
+
+<div class="hero-buttons">
+
+<button class="primary">
+
+Shop Now
+
+</button>
+
+<button class="secondary">
+
+Custom Print
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<div class="cube">
+
+🧊
+
+</div>
+<section id="accountSection" class="account-section">
+
+    <div class="account-card">
+
+        <h2>Account</h2>
+
+        <div class="auth-container">
+
+            <div class="auth-box">
+
+                <h3>Sign Up</h3>
+
+                <input
+                type="email"
+                id="signupEmail"
+                placeholder="Email">
+
+                <input
+                type="password"
+                id="signupPassword"
+                placeholder="Password">
+
+                <button onclick="signup()">
+
+                    Create Account
+
+                </button>
+
+            </div>
+
+            <div class="auth-box">
+
+                <h3>Login</h3>
+
+                <input
+                type="email"
+                id="loginEmail"
+                placeholder="Email">
+
+                <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password">
+
+                <button onclick="login()">
+
+                    Login
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <button
+        class="logout-btn"
+        onclick="logout()">
+
+        Logout
+
+        </button>
+
+    </div>
+
+</section>
+</div>
+
+</section>
+
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/auth.js"></script>
+<script type="module" src="js/app.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js")
+            .then(() => console.log("Service Worker Registered"))
+            .catch(err => console.log("Service Worker Error:", err));
+    });
+}
+</script>
+
+</body>
+
+</html>
+```

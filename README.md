@@ -1,1 +1,1 @@
-# infinity-cubes-website
+# Infinity-Cubes-V3
